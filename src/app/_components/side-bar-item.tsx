@@ -123,7 +123,7 @@ export default function SideBarItem({ icon, text, active, alert, href, childside
                   <div className={`py-2 text-[15px] pl-3 border-b ${pathname.includes(href) ? 'text-[#6691e7]' : ""}`}>{text}</div>
                   <div className="flex flex-col gap-4 px-3 py-2">
                     {childsideBarItems?.map((item: any, index: number) => (
-                      <Link href={item.href} className={`text-[13px] flex gap-1 items-center ${(pathname ===item.href) ? 'text-[#6691e7]': 'hover:text-[#6691e7]'}`}>
+                      <Link href={item.href} key={index} className={`text-[13px] flex gap-1 items-center ${(pathname ===item.href) ? 'text-[#6691e7]': 'hover:text-[#6691e7]'}`}>
                         <Dot size={12}/>
                         {item.text}
                       </Link>
