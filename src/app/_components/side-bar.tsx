@@ -21,7 +21,7 @@ type SideBarItem = {
   active: boolean
   alert: boolean
   href: string | null
-  childsideBarItems: {text: string, href: string}[]
+  childsideBarItems: {text: string, href: string | null}[]
 }
 
 const sidebarItems: SideBarItem[] = [
@@ -33,7 +33,7 @@ const sidebarItems: SideBarItem[] = [
     href: '/',
     childsideBarItems: []
   },{
-    icon: <UserCircle size={15} />,
+    icon: <UserCircle size={15} className="w-[15px] h-[20px]"/>,
     text: 'Users',
     active: false,
     alert: false,

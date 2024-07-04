@@ -1,0 +1,15 @@
+.item {
+  position: relative;
+}
+.item-hover {
+  display: none;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background: white;
+  right: 0;
+}
+
+.item:hover .item-hover {
+  display: block;
+}

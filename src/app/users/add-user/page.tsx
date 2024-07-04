@@ -1,7 +1,9 @@
 
 function AddUserPage() {
   return (
-    <div>page</div>
+    <div className="">
+      thêm thành viên
+    </div>
   )
 }
 

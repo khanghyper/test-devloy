@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/app/_components/side-bar";
+import Header from "@/app/_components/header";
 
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <body className={nunitoSans.className}>
         <div className="flex relative">
           <SideBar/>
-          {children}
+          <div className="bg-body w-screen">
+            <Header/>
+            {children}
+          </div>
         </div>
       </body>
     </html>
