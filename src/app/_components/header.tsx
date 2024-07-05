@@ -100,7 +100,7 @@ const Header = () => {
               <div className="h-full bg-[#f3f3f9] flex items-center">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild className="">
-                    <div className="px-[14px] my-2">
+                    <div className="px-[14px] my-2 cursor-pointer">
                       <span className="flex items-center gap-2">
                         <Image width={32} height={32} className="rounded-full" src={'https://github.com/shadcn.png'} alt=""/>
                         <span className="flex flex-col">

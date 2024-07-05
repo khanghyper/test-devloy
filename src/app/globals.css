@@ -78,3 +78,20 @@
     background: #f3f6f9;
   }
 }
+
+@keyframes dialog-content-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes dialog-content-hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
