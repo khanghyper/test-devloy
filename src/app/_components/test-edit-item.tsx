@@ -60,7 +60,7 @@ export default function TestEditItem({ id, name, type }: { id: number, name: str
 
   if (type === 'create') {
     return (
-      <Dialog open={isOpen} onOpenChange={handleChangeOpen}>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <span className="text-blue-600 cursor-pointer">Thêm</span>
         </DialogTrigger>
